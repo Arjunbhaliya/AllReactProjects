@@ -16,24 +16,24 @@ export default function AuthInputs() {
   function handleLogin() {
     console.log("login click")
     setSubmitted(true);
-    
+
   }
 
   const emailNotValid = submitted && !enteredEmail.includes('@');
-
   const passwordNotValid = submitted && enteredPassword.trim().length < 6;
 
   let labelClass = "block mb-2 text-xs font-bold tracking-wide uppercase "
   let inputClass = " w-full px-3 py-2 leading-tight  border rounded shadow"
 
-  if(emailNotValid){
+  if (emailNotValid) {
     labelClass += " text-red-400"
-  }else{
+  } else {
     labelClass += " text-stone-300"
   }
-  if(passwordNotValid){
+
+  if (passwordNotValid) {
     inputClass += " text-red-500 bg-red-100 border-red-300 "
-  }else{
+  } else {
     inputClass += " text-gray-700  bg-stone-300"
   }
 
@@ -49,7 +49,7 @@ export default function AuthInputs() {
           />
         </p>
         <p>
-          <label  className={labelClass}>Password</label>
+          <label className={labelClass}>Password</label>
           <input
             type="password"
             className={inputClass}
