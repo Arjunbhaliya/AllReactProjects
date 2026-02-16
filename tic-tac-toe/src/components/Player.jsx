@@ -16,17 +16,17 @@ export default function Player({ name, symbol, isActive, onChangeName }) {
         setPlayerName(event.target.value)
     }
 
-    let editplayerName = <span className="player-name">{playerName}</span>
+    let editPlayerName = <span className="player-name">{playerName}</span>
 
     if (isEditing) {
-        editplayerName = <input type="text" required value={playerName} onChange={handleChange} />
+        editPlayerName = <input type="text" required value={playerName} onChange={handleChange} />
     }
 
     return (
 
         <li className={isActive ? 'active' : undefined}>
             <span className="player">
-                {editplayerName}
+                {editPlayerName}
                 <span className="player-symbol">{symbol}</span>
             </span>
             <button onClick={clickHandler}>{isEditing ? "Save" : "Edit"}</button>

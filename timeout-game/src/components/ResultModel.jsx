@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom'
 
 export default function ResultModel({ ref, remainingTime, targetTime, Reset }) {
-    const formatedTime = (remainingTime / 1000).toFixed(2)
+    const formattedTime = (remainingTime / 1000).toFixed(2)
     const Lost = remainingTime <= 0;
     const score = Math.round((1 - remainingTime / (targetTime * 1000)) * 100)
 
@@ -12,7 +12,7 @@ export default function ResultModel({ ref, remainingTime, targetTime, Reset }) {
                 The Targeted Time was <strong>{targetTime} seconds.</strong>
             </p>
             <p>
-                The stoped time is <strong> {formatedTime} seconds. left</strong>
+                The stoped time is <strong> {formattedTime} seconds. left</strong>
             </p>
             <form method="dialog" onSubmit={Reset}>
                 <button>Close</button>

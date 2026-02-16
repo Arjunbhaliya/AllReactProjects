@@ -51,7 +51,7 @@ function App() {
     setGameTurn([])
   }
 
-  function chnagePlayerName(symbol, newName) {
+  function changePlayerName(symbol, newName) {
     setPlayers((prevPlayer) => {
       return {
         ...prevPlayer,
@@ -87,8 +87,8 @@ function App() {
     <main >
       <div id="game-container">
         <ol id="players" className="highlight-player">
-          <Player name={PLAYER.X} symbol="X" isActive={playerActive === 'X'} onChangeName={chnagePlayerName} />
-          <Player name={PLAYER.O} symbol="O" isActive={playerActive === 'O'} onChangeName={chnagePlayerName} />
+          <Player name={PLAYER.X} symbol="X" isActive={playerActive === 'X'} onChangeName={changePlayerName} />
+          <Player name={PLAYER.O} symbol="O" isActive={playerActive === 'O'} onChangeName={changePlayerName} />
         </ol>
         {(winner || hasDraw) && <GameOver winner={winner} onRestart={handleRestart} ></GameOver>}
         <BordGame onSelectSquar={handleSelect}
