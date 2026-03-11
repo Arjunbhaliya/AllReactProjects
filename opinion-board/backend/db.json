@@ -1,0 +1,32 @@
+{
+  "opinions": [
+    {
+      "id": 1773143555956,
+      "votes": 2,
+      "userName": "Arjun",
+      "title": "React",
+      "body": "React Learning  takes time and Implementing that take more time "
+    },
+    {
+      "id": 1773143180314,
+      "votes": 2,
+      "userName": "Arjun",
+      "title": "Spring boot",
+      "body": "Spring boot is best and easy"
+    },
+    {
+      "id": 1,
+      "userName": "Maximilian Schwarzmüller",
+      "title": "Do yourself a favor and learn React!",
+      "body": "React is an amazing JavaScript library!\n\nDespite all it's shortcomings.",
+      "votes": 4
+    },
+    {
+      "id": 2,
+      "userName": "Maximilian Schwarzmüller",
+      "title": "React has more depth than you might first think!",
+      "body": "React is a great library to learn, but it's not just about the basics. Dive deeper!\nFor example with this course!",
+      "votes": 0
+    }
+  ]
+}
