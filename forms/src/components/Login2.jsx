@@ -41,7 +41,6 @@ export default function Login() {
       setEmailInvalid(true)
       return;
     }
-
     setEmailInvalid(false)
   }
 
@@ -56,7 +55,6 @@ export default function Login() {
             onBlur={() => handleFocuse('email')}
             onChange={(event) => handleChange('email', event.target.value)}
             value={enteredValue.email}
-
           />
           <div>{emailInvalid && <p>Email is invalid</p>}</div>
         </div>
