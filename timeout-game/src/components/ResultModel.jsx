@@ -12,7 +12,7 @@ export default function ResultModel({ ref, remainingTime, targetTime, Reset }) {
                 The Targeted Time was <strong>{targetTime} seconds.</strong>
             </p>
             <p>
-                The stoped time is <strong> {formattedTime} seconds. left</strong>
+                The stoped time is <strong> {formattedTime} seconds left</strong>
             </p>
             <form method="dialog" onSubmit={Reset}>
                 <button>Close</button>
