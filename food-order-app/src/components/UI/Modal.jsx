@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { createPortal} from 'react-dom'
 import Button from "./Button";
 
 export default function Modal({children , open}) {
@@ -10,11 +11,14 @@ export default function Modal({children , open}) {
             } else {
                 dialog.current.close();
             }
+            console.log(open)
         }, [open])
+
+        
     
-        return <dialog ref={dialog}>
-            {children}
-            <Button>Close</Button>
-            <Button>Checkout </Button>
+        return createPortal(
+            <dialog ref={dialog} className="modal">
+            {children}         
         </dialog>
+        , document.getElementById('modal'))
 }
