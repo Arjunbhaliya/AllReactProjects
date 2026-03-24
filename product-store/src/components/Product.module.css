@@ -1,0 +1,23 @@
+.modal {
+   text-align: center;
+   padding: 20px;
+   width: 70%;
+   background-color: rgb(152, 143, 12);
+}
+
+.image {
+     width: 25%;
+    height: auto;
+   
+}
+
+.modal::backdrop{
+    background: rgba(0,0,0,0.8);
+}
+
+.button{
+    border-color: rgb(12, 19, 1);
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(212, 151, 19);
+}
